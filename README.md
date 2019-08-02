@@ -3,7 +3,7 @@
 MOpt-AFL is a AFL-based fuzzer that utilizes a customized Particle Swarm Optimization (PSO) algorithm to find the optimal selection probability distribution of operators with respect to fuzzing effectiveness. More details can be found in the technical report. The installation of MOpt-AFL is the same as AFL's. 
 
 ### 2. Cite Information
-Chenyang Lv, Shouling Ji, Chao Zhang, Yuwei Li, Wei-Han Lee, Yu Song and Raheem Beyah, MOPT: Optimized Mutation Scheduling for Fuzzers, USENIX Security 2019. 
+Chenyang Lyu, Shouling Ji, Chao Zhang, Yuwei Li, Wei-Han Lee, Yu Song and Raheem Beyah, MOPT: Optimized Mutation Scheduling for Fuzzers, USENIX Security 2019. 
 
 ### 3. Seed Sets
 We open source all the seed sets used in the paper "MOPT: Optimized Mutation Scheduling for Fuzzers".
@@ -28,3 +28,18 @@ Other important parameters can be found in afl-fuzz.c, for instance,
 0 < `limit_time_bound` < 1, MOpt-AFL-tmp.  `limit_time_bound` >= 1, MOpt-AFL-ever. 
 
 Having fun with MOpt-AFL. 
+
+### Citation:
+
+`@inproceedings {236282,`
+<br>`author = {Chenyang Lyu and Shouling Ji and Chao Zhang and Yuwei Li and Wei-Han Lee and Yu Song and Raheem Beyah},`
+<br>`title = {{MOPT}: Optimized Mutation Scheduling for Fuzzers},`
+<br>`booktitle = {28th {USENIX} Security Symposium ({USENIX} Security 19)},`
+<br>`year = {2019},`
+<br>`isbn = {978-1-939133-06-9},`
+<br>`address = {Santa Clara, CA},`
+<br>`pages = {1949--1966},`
+<br>`url = {https://www.usenix.org/conference/usenixsecurity19/presentation/lyu},`
+<br>`publisher = {{USENIX} Association},`
+<br>`month = aug,`
+<br>`}`
