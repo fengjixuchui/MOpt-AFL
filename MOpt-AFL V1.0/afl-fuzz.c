@@ -8076,7 +8076,7 @@ static u8 pilot_fuzzing(char** argv) {
 
 			perf_score = orig_perf;
 
-			sprintf(tmp, "MOpt-splice %u", splice_cycle);
+			sprintf(tmp, "MOpt-splice-%u", splice_cycle);
 			stage_name = tmp;
 			stage_short = "MOpt-splice";
 			stage_max = SPLICE_HAVOC * perf_score / havoc_div / 100;
@@ -8111,8 +8111,8 @@ static u8 pilot_fuzzing(char** argv) {
 
 				if (!splice_cycle) {
 
-					stage_name = "MOpt avoc";
-					stage_short = "MOpt havoc";
+					stage_name = "MOpt-havoc";
+					stage_short = "MOpt-havoc";
 					stage_max = (doing_det ? HAVOC_CYCLES_INIT : HAVOC_CYCLES) *
 						perf_score / havoc_div / 100;
 
@@ -8120,9 +8120,9 @@ static u8 pilot_fuzzing(char** argv) {
 				else {
 					static u8 tmp[32];
 					perf_score = orig_perf;
-					sprintf(tmp, "MOpt splice %u", splice_cycle);
+					sprintf(tmp, "MOpt-splice-%u", splice_cycle);
 					stage_name = tmp;
-					stage_short = "MOpt splice";
+					stage_short = "MOpt-splice";
 					stage_max = SPLICE_HAVOC * perf_score / havoc_div / 100;
 				}
 
@@ -9870,7 +9870,7 @@ static u8 core_fuzzing(char** argv) {
 
 			perf_score = orig_perf;
 
-			sprintf(tmp, "MOpt-core-splice %u", splice_cycle);
+			sprintf(tmp, "MOpt-core-splice-%u", splice_cycle);
 			stage_name = tmp;
 			stage_short = "MOpt-core-splice";
 			stage_max = SPLICE_HAVOC * perf_score / havoc_div / 100;
@@ -9906,8 +9906,8 @@ static u8 core_fuzzing(char** argv) {
 
 				if (!splice_cycle) {
 
-					stage_name = "MOpt core avoc";
-					stage_short = "MOpt core havoc";
+					stage_name = "MOpt-core-havoc";
+					stage_short = "MOpt-core-havoc";
 					stage_max = (doing_det ? HAVOC_CYCLES_INIT : HAVOC_CYCLES) *
 						perf_score / havoc_div / 100;
 
@@ -9915,9 +9915,9 @@ static u8 core_fuzzing(char** argv) {
 				else {
 					static u8 tmp[32];
 					perf_score = orig_perf;
-					sprintf(tmp, "MOpt core splice %u", splice_cycle);
+					sprintf(tmp, "MOpt-core-splice-%u", splice_cycle);
 					stage_name = tmp;
-					stage_short = "MOpt core splice";
+					stage_short = "MOpt-core-splice";
 					stage_max = SPLICE_HAVOC * perf_score / havoc_div / 100;
 				}
 
